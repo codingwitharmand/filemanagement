@@ -26,7 +26,7 @@
             <td th:text="${file.fileSize}"></td>
             <td th:text="${file.uploadTime}"></td>
             <td>
-                <a th:href="@{'/api/v1/files/download/' + ${file.fileName}}" class="btn btn-sm btn-success">Download</a>
+                <a th:href="@{'/download/' + ${file.fileName}}" class="btn btn-sm btn-success">Download</a>
             </td>
         </tr>
         </tbody>
